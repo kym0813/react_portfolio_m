@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledBox = styled.div`
+    display: ${props => props.display || 'flex'};
+    flex-direction: column;
     border-top: 10px solid #0091da;
     color: #333;
     font-family: "Open Sans", "Arial";
@@ -117,10 +119,10 @@ const info2 = [
     { name: "Alumni", link: "https://home.kpmg/kr/en/home/alumni.html" },
     { name: "Locations", link: "https://home.kpmg/kr/en/home/about/offices.html" },
 ];
-const Footer = ({ language }) => {
+const Footer = ({ language, display }) => {
     language = 'ko'
     return (
-        <StyledBox>
+        <StyledBox display={display===0 ? 'none' : ''}>
             <div className='content1'>
                 <div className='row content1-1'>
                     <div className='row'>

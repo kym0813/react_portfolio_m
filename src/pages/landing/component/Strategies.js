@@ -9,6 +9,7 @@ import { motion } from "framer-motion"
 const StyledBox = styled.div`
     text-transform: capitalize;
     .item{
+        margin-left: 6rem;
         margin-bottom: 3rem;
         .title{
             font-size: 36px;
@@ -30,7 +31,6 @@ const StyledBox = styled.div`
             }
         }
         .content{
-            width: 1200px;
             font-size: 20px;
             margin: 1rem 0 0 1rem;
             padding: 1rem;
@@ -42,7 +42,6 @@ const StyledBox = styled.div`
             &:hover{
                 box-shadow: 1px 1px 10px #bdbdbd;
                 background: rgba(245,245,245,0.9);
-
             }
         }
     }
@@ -62,7 +61,7 @@ const Strategies = () => {
 
     return (
         <StyledBox>
-            <FullScreen bg={bg} x={20} overlay='rgba(0,0,0,0.1)' justify='center' padding='80px 0 0 5rem' size={180}>
+            <FullScreen bg={bg} x={20} overlay='rgba(0,0,0,0.1)' justify='center' size={180}>
                 {landingData.strategies.map((p, i) =>
                     <div key={i} className='item'>
                         <div className='title'>

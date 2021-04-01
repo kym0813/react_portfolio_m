@@ -10,7 +10,6 @@ const StyledBox = styled.div`
     background-size: ${props => props.size ||  '100%'};
     background-position-x: ${props => props.x || '50%'};
     background-position-y: ${props => props.y || '50%'};
-    /* background-repeat: no-repeat; */
     animation: animatedBackground ease-in 10s infinite;
     .overlay{
         display: flex;

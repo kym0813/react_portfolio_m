@@ -15,10 +15,10 @@ const StyledBox = styled.div`
         text-transform: uppercase;
         text-decoration: none;
         border: 1px solid;
-        min-width: 300px;
-        min-height: 300px;
+        width: 300px;
+        height: 300px;
         border-radius: 300px;
-        margin: 2rem;
+        margin: 1.5rem;
         transition: 1s;
 
         &:hover{
@@ -33,9 +33,9 @@ const Solutions = () => {
 
     return (
         <StyledBox>
-            <FullScreen bg={bg} direction='row' justify='center' overlay='rgba(0,0,0,0.7)' padding='12rem 0 0 0 '>
+            <FullScreen bg={bg} direction='row' justify='center' overlay='rgba(0,0,0,0.7)'>
             {solutionsData.map((s, i) => 
-            <Link to={s.contents.link} className='item' style={{marginTop: `${(3-i)*4}%`}}>
+            <Link key={i} to={`/solutions${s.contents.link}`} className='item' style={{marginTop: `${(4-i)*5}%`}}>
                 {s.key}
                 </Link>
             )}

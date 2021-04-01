@@ -8,12 +8,12 @@ import arrowDown from 'react-useanimations/lib/arrowDown'
 
 const StyledBox = styled.div`
     @keyframes FadeInText {
-        0% { opacity: 0.2; margin-top: 18rem;}
-        100% { opacity: 1; margin-top: 10rem;}
+        0% { margin-top: 18rem; }
+        100% { margin-top: 10rem; }
     }
     .main-text{
         animation: FadeInText 2s linear forwards;
-        width: 1000px;
+        max-width: 1000px;
         margin-left: 10rem;
         p:nth-child(1){
             font-size: 64px;
@@ -21,11 +21,11 @@ const StyledBox = styled.div`
         }
         p:nth-child(2){
             font-size: 36px;
-            opacity: 0.8;
+            color: rgba(255,255,255,0.8);
         }
         p:nth-child(3){
             font-size: 20px;
-            opacity: 0.8;
+            color: rgba(255,255,255,0.8);
         }
     }
     .motionDown {
@@ -34,6 +34,7 @@ const StyledBox = styled.div`
         display: flex;
         justify-content: center;
         position: absolute;
+        z-index: 1;
         bottom: 3rem;
         span{
             align-self: center;
@@ -43,12 +44,14 @@ const StyledBox = styled.div`
 `;
 
 const Intro = () => {
+
     const WrapperStyle = {
         display: 'inline-flex',
         border: '1.5px solid',
         borderRadius: '30px',
         height: '50px'
     }
+    
     return (
         <StyledBox>
             <FullScreen bg={bg} x='40%' y='20%' size={200}>
