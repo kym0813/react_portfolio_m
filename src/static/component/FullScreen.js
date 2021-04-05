@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledBox = styled.div`
+    overflow: hidden;
     width:100%;
     height: 100vh;
     background-color: #e2e5e9;
     color: ${props => props.color || 'white'};
     background-image: url(${props => props.bg});
-    background-size: ${props => props.size ||  '100%'};
+    background-size: ${props => `${props.size}%` ||  '100%'};
     background-position-x: ${props => props.x || '50%'};
     background-position-y: ${props => props.y || '50%'};
     animation: animatedBackground ease-in 10s infinite;

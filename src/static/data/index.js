@@ -35,7 +35,7 @@ export const solutionsData = [
         {
             title: "Smart OCR",
             link: '/ocr',
-            thumbnail : 'https://cdn.pixabay.com/photo/2016/11/29/08/17/bible-1868359_1280.jpg',
+            thumbnail: 'https://cdn.pixabay.com/photo/2016/11/29/08/17/bible-1868359_1280.jpg',
             desc: [
                 "OCR(Optical Character Recognition) is technology which makes it possible to convert text from scanned documents or images into editable format. When you simply scan a document, the resulting file is an image that computer software does not recognize as text. This means that users are not able to edit and search through the text, alter its formatting, extract information what they needs, etc. This is especially inconvenient for office documents where the ability to search, summarize and edit is essential. This problem is solved with OCR. The documents are fed into a scanner and then processed with OCR software, thus converting them to electronic documents. Optical character recognition is not a simple technology. It applies complicated mathematical algorithms. However, Smart OCR offers a very convenient and easy to use interface, so you can ripe the benefits of the technology without any hassle. Smart OCR is advanced technology and rather more specific. It is focuses on the utilize of recognized texts in various forms. Only the necessary fields can be extracted from the documents, and by efficiently working in various ways - collaboration with RPA - can reduce wasted resources. Through this process, more resources can be allocated to necessary tasks.",
                 'Smart OCR is advanced technology and rather more specific. It is focuses on the utilize of recognized texts in various forms. Only the necessary fields can be extracted from the documents, and by efficiently working in various ways - collaboration with RPA - can reduce wasted resources. Through this process, more resources can be allocated to necessary tasks.',
@@ -286,7 +286,7 @@ export const solutionsData = [
         }
     },
     {
-        key : 'sr',
+        key: 'sr',
         contents: {
             title: "Signals Repository",
             link: '/signals',
@@ -369,7 +369,73 @@ export const solutionsData = [
                     mp4: "./gif/data_catalog_demo.mp4",
                 }
             ]
-    
+
         }
     }
 ];
+
+export const globalInsightsCenterData = {
+    meta: {
+        displayItemsId: 2021,
+        link: 'https://home.kpmg/xx/en/home/insights.html',
+        desc: 'Welcome to the KPMG knowledge base of research that demonstrates our understanding of complex business challenges faced by companies around the world',
+        surveyContent: {
+            title: 'KPMG CEO Outlook Pulse Survey',
+            desc: 'Preparing for a new reality.',
+            link: 'https://home.kpmg/xx/en/home/insights/2021/03/ceo-outlook-pulse.html',
+        }
+    },
+    contents:
+    {
+        "2020": {
+            items: [
+                {
+                    title: 'Data-driven client stories',
+                    desc: 'Learn how KPMG member firms helped clients cultivate their data ecosystems.',
+                    link: 'https://home.kpmg/xx/en/home/insights/2019/11/data-driven-client-stories.html'
+                },
+                {
+                    title: 'Building confidence in your data',
+                    desc: 'At KPMG, our approach to data-driven technologies is rooted in trust.',
+                    link: 'https://home.kpmg/xx/en/home/insights/2018/07/trusted-analytics-for-confident-decisions.html',
+                },
+                {
+                    title: 'Data-driven Technologies : Our capabilities',
+                    desc: 'KPMG has developed robust technology solutions to help clients find value in data.',
+                    link: 'https://home.kpmg/xx/en/home/insights/2018/07/our-capabilities.html',
+                },
+                {
+                    title: 'Ready, set, fail?',
+                    desc: 'Results from a 2017 KPMG LLP study',
+                    link: 'https://home.kpmg/xx/en/home/insights/2018/08/ready-set-fail.html',
+                },
+            ]
+        },
+        "2021": {
+            items: [
+                {
+                    title: 'KPMG IMPACT ',
+                    desc: 'Global expertise building a more sustainable and resilient future.',
+                    link: 'https://home.kpmg/xx/en/home/insights/2020/06/kpmg-impact.html'
+                },
+                {
+                    title: 'Agile and resilient',
+                    desc: 'Alternative investments embrace the new reality.',
+                    link: 'https://home.kpmg/xx/en/home/insights/2020/09/agile-and-resilient-alternative-investments-embrace-the-new-reality.html',
+                },
+                {
+                    title: 'Pulse of Fintech',
+                    desc: 'Biannual analysis of global fintech investments.',
+                    link: 'https://home.kpmg/xx/en/home/industries/financial-services/pulse-of-fintech.html',
+                },
+                {
+                    title: 'Contextualizing "shovel-ready" in light of COVID-19',
+                    desc: 'Infrastructure has been a reliable shoulder to lean on through the COVID-19 crisis. But what does it mean to be shovel-ready in this new reality.',
+                    link: 'https://home.kpmg/xx/en/home/insights/2020/08/contextualizing-shovel-ready-in-light-of-covid-19.html',
+                }
+            ]
+        },
+    },
+
+
+};

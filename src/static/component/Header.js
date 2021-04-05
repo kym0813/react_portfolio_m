@@ -36,8 +36,8 @@ const Header = ({ setMenu, history }) => {
 
     const handleToggle = () => {
         setClicked(!clicked);
-        setMenu(0);
-        setLink(clicked ? '/menu' : '/')
+        setMenu(clicked ? 1 : 0);
+        setLink(clicked ? '/menu' : '/');
     };
     return (
         <StyledBox>

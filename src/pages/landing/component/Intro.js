@@ -8,8 +8,8 @@ import arrowDown from 'react-useanimations/lib/arrowDown'
 
 const StyledBox = styled.div`
     @keyframes FadeInText {
-        0% { margin-top: 18rem; }
-        100% { margin-top: 10rem; }
+        0% { margin-top: 18rem; opacity: 0.3; }
+        100% { margin-top: 10rem; opacity: 1; }
     }
     .main-text{
         animation: FadeInText 2s linear forwards;
@@ -54,7 +54,7 @@ const Intro = () => {
     
     return (
         <StyledBox>
-            <FullScreen bg={bg} x='40%' y='20%' size={200}>
+            <FullScreen bg={bg} x='40%' y='20%' size={140}>
                 <div className='main-text'>
                     {landingData.intro.map((p, i) => <p key={i}>{p}</p>)}
                 </div>
