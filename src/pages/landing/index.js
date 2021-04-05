@@ -8,10 +8,11 @@ const Landing = () => {
 
     return (
         <div className='landing'>
-            <Intro id='1'/>
-            <Vision id='2' />
-            <Strategies id='3' />
-            <Solutions id='4' />
+            <Intro id='intro'/>
+            <Vision id='vision' />
+            <Strategies id='3'/>
+            <Solutions id='4'/>
+
         </div>
     );
 }

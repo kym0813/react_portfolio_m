@@ -9,8 +9,9 @@ const StyledBox = styled.div`
         text-decoration: none;
         color: inherit;
     }
+
     .item{
-        width: 650px;
+        width: 700px;
         border-left: 5px solid;
         margin-bottom: 4rem;
     }
@@ -21,6 +22,9 @@ const StyledBox = styled.div`
         height: 3px;
         background: #fff;
         transition: width .6s;
+    }
+    .item:hover{
+        color: #00338d;
     }
     .item:hover::after {
         width: 100%;
