@@ -9,6 +9,7 @@ import Header from './static/component/Header';
 import Footer from './static/component/Footer';
 import Menu from './static/component/Menu';
 import { solutionsData } from './static/data';
+import List from './pages/solutions/component/list';
 
 
 const App = () => {
