@@ -1,19 +1,32 @@
 import React from 'react';
+import styled from 'styled-components';
 import Intro from './component/Intro';
 import Vision from './component/Vision';
 import Strategies from './component/Strategies';
 import Solutions from './component/Solutions';
 
+const StyledBox = styled.div`
+    .container{ 
+        scroll-behavior: smooth;
+        height: 100vh;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+    }
+    .container::-webkit-scrollbar { width: 0; background: transparent;}
+    .container > div { scroll-snap-align: start;}
+`;
+
 const Landing = () => {
 
     return (
-        <div className='landing'>
-            <Intro id='intro'/>
-            <Vision id='vision' />
-            <Strategies id='3'/>
-            <Solutions id='4'/>
-
-        </div>
+        <StyledBox className='landing'>
+            <div className='container' id='landing-container'>
+                <div><Intro /></div>
+                <div><Vision /></div>
+                <div><Strategies /></div>
+                <div><Solutions /></div>
+            </div>
+        </StyledBox>
     );
 }
 

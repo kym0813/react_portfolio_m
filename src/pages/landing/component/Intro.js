@@ -15,6 +15,7 @@ const StyledBox = styled.div`
         animation: FadeInText 2s linear forwards;
         max-width: 1000px;
         margin-left: 10rem;
+        margin-top: 10rem;
         p:nth-child(1){
             font-size: 64px;
             margin: 0;
@@ -33,9 +34,7 @@ const StyledBox = styled.div`
         color: white;
         display: flex;
         justify-content: center;
-        position: absolute;
-        z-index: 1;
-        bottom: 3rem;
+        margin-top: 15rem;
         span{
             align-self: center;
             margin: 1rem;

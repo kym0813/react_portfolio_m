@@ -5,15 +5,25 @@ import Contents from './component/Contents';
 import Locations from './component/Locations';
 
 const StyledBox = styled.div`
+    .container{ 
+        scroll-behavior: smooth;
+        height: 100vh;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+    }
+    .container::-webkit-scrollbar { width: 0; background: transparent;}
+    .container > div { scroll-snap-align: start;}
 
 `;
 
 const GlobalInsight = () => {
-    return(
+    return (
         <StyledBox>
-           <Intro id='1'/>
-           <Contents id='2' />
-           <Locations id='3' />
+            <div className='container' id='global-container'>
+                <div><Intro /></div>
+                <div><Contents /></div>
+                <div><Locations /></div>
+            </div>
         </StyledBox>
     );
 }

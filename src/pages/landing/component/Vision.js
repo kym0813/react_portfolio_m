@@ -6,13 +6,13 @@ import { landingData } from '../../../static/data';
 import AppsSharpIcon from '@material-ui/icons/AppsSharp';
 
 const StyledBox = styled.div`
-    /* @keyframes FadeInText {
+    @keyframes FadeInText {
         0% { opacity: 0.2; }
         100% { opacity: 1; }
-    } */
+    }
     .vision{
-        /* animation: FadeInText linear 3s forwards; */
-        font-size: 36px;
+        animation: FadeInText linear 3s forwards;
+        font-size: 30px;
         text-align: center;
         div:nth-child(1){
             font-size: larger;
@@ -23,8 +23,8 @@ const StyledBox = styled.div`
         }
     }
     .content{
-        /* animation: FadeInText linear 3s forwards; */
-        margin: 3rem 10rem;
+        animation: FadeInText linear 3s forwards;
+        margin: 3rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -34,7 +34,7 @@ const StyledBox = styled.div`
         }
         .item{
             width: 300px;
-            height: 200px;
+            height: 150px;
             padding: 3rem;
             display: flex;
             flex-direction: column;

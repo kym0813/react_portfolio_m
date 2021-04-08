@@ -18,6 +18,8 @@ const StyledBox = styled.div`
 const Scroll = () => {
 
     const ScrollToTop = () => {
+        document.getElementById('landing-container') && document.querySelector('#landing-main-container').scrollTo(0,0);
+        document.getElementById('global-container') && document.querySelector('#global-container').scrollTo(0,0);
         window.scrollTo(0, 0);
     }
 

@@ -20,7 +20,6 @@ const StyledBox = styled.div`
         border-radius: 300px;
         margin: 1.5rem;
         transition: 1s;
-
         &:hover{
             background: white;
             color: #333;

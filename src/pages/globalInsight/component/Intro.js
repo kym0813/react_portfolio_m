@@ -42,7 +42,7 @@ const Intro = () => {
             <FullScreen bg={bg} size={100} padding='15rem 0 0 10rem' overlay='rgba(0,0,0,0.6)'>
                 <div className='title'>lighthouse insights center</div>
                 <p>{data.meta.desc}</p>
-                <a href={data.meta.link} target='_blank' className='btn'>
+                <a href={data.meta.link} target='_blank' rel="noreferrer" className='btn'>
                     <ArrowForwardIosSharpIcon />
                     visit global insights center
                 </a>

@@ -1,49 +1,47 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const StyledBox = styled.div`
-    display: ${props => props.display || 'flex'};
-    flex-direction: column;
     border-top: 10px solid #0091da;
     color: #333;
     font-family: "Open Sans", "Arial";
+    a {
+        text-decoration: none;
+        color: inherit;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    // WHITE ROW1
     .content1{
         display: flex;
         flex-direction: column;
+        background: #fff;
         .content1-1{
             border-bottom: 1px solid rgb(246,246,246);
-            padding: 35px 40px 15px 50px;
+            padding: 2rem 3rem 1rem 3rem;
             text-align: right;
             font-size: 18px;
             color: #666;
-            .icon{
-                padding-left: 10px;
-            }
+            .icon{ padding-left: 1rem;}
             .icon-copyright{
                 font-size: 9px;
                 color: rgb(246,246,246);
             }
         }
-        a {
-            text-decoration: none;
-            color: inherit;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
         .content1-2{
-            padding: 35px 40px 50px 50px;
+            padding: 2rem 5rem 2rem 3rem;
             font-size: 18px;
             color: #00338d;
             .content1-2-1{
                 border: 2px solid;
+                margin-right: 3rem;
                 border-radius: 8px;
-                padding: 0 15px 10px 15px;
+                padding: 0 1rem 1rem 1rem;
                 color: #0091da;
-                width: 250px;
-                h3{
-                    font-size: 18px;
-                }
+                width: 100%;
+                h3{ font-size: 18px; }
                 p {
                     color: #333;
                     font-size: 16px;
@@ -52,26 +50,18 @@ const StyledBox = styled.div`
                 }
             }
         }
-        .tab{
-                margin-right: 60px;
-            }
+        .tab{ margin-right: 60px;}
     }
+    // GRAY 
     .content2{
         padding: 1.5rem 3rem 2rem 3rem;
         color: #333;
         background: #dedede;
         font-size: 14px;
-        p{
-            width: 70%;
-        }
-        a{
-            text-decoration: none;
-        }
     }
     .row{
             display: inline-flex;
             justify-content: space-between;
-
     }
     .col{
         display: flex;
@@ -119,39 +109,38 @@ const info2 = [
     { name: "Alumni", link: "https://home.kpmg/kr/en/home/alumni.html" },
     { name: "Locations", link: "https://home.kpmg/kr/en/home/about/offices.html" },
 ];
-const Footer = ({ language, display }) => {
-    language = 'ko'
+const Footer = ({ language }) => {
     return (
-        <StyledBox display={display===0 ? 'none' : ''}>
+        <StyledBox>
             <div className='content1'>
                 <div className='row content1-1'>
                     <div className='row'>
                         {info1.map(i => <a key={i.name} href={i.link} target='blank' className='tab'><div>{i.name}</div></a>)}
                     </div>
-                  
+
                     <div className='col'>
                         <div className='tab2'>
                             {mediaInfo.map(i =>
-                                <a key={i.name} href={i.link} target='blank' className='icon'><img width='32px' src={i.src} alt='media'/></a>
+                                <a key={i.name} href={i.link} target='blank' className='icon'><img width='32px' src={i.src} alt='media' /></a>
                             )}
                         </div>
                         <div className='icon-copyright'>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                     </div>
                 </div>
-            
+
 
                 <div className='row content1-2'>
                     <div className='row'>
                         {info2.map(i => <a key={i.name} href={i.link} target='blank' className='tab'><div>{i.name}</div></a>)}
-                                
+
                     </div>
                     <a href='https://home.kpmg/kr/en/home.html' target='blank'><div className='col content1-2-1'>
                         <h3>KPMG Korea</h3>
                         {language === "ko"
                             ?
-                            <p>KPMG Korea에 대한 더 많은 정보를 원하신다면 이곳을 클릭하세요.<br/>KPMG KR. 웹페이지 링크 </p>
+                            <p>KPMG Korea에 대한 더 많은 정보를 원하신다면 이곳을 클릭하세요.<br />KPMG KR. 웹페이지 링크 </p>
                             :
-                            <p>Click to explore KPMG Korea.<br/>Link to KPMG KR. Web </p>
+                            <p>Click to explore KPMG Korea.<br />Link to KPMG KR. Web </p>
                         }
                     </div></a>
                 </div>

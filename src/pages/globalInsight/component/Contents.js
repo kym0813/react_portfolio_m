@@ -53,6 +53,7 @@ const Contents = () => {
                 {data.contents[data.meta.displayItemsId].items.map((item, i) =>
                     <a
                         href={item.link} key={i} className='item' target='_blank'
+                        rel="noreferrer"
                         style={{ marginLeft: `${(i) * 10}%` }}
                     >
                         <div className='title'>{item.title}</div>

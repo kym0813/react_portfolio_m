@@ -41,6 +41,9 @@ export const solutionsData = [
                 'Smart OCR is advanced technology and rather more specific. It is focuses on the utilize of recognized texts in various forms. Only the necessary fields can be extracted from the documents, and by efficiently working in various ways - collaboration with RPA - can reduce wasted resources. Through this process, more resources can be allocated to necessary tasks.',
                 "Only the necessary fields can be extracted from the documents, and by efficiently working in various ways - collaboration with RPA - can reduce wasted resources. Through this process, more resources can be allocated to necessary tasks.",
             ],
+            descKo: [
+                "OCR(Optical Character Recognition)은 스캔한 문서나 이미지의 텍스트를 편집 가능한 형식으로 변환하는 기술입니다. 문서를 단순히 스캔하기만 한 파일은 이미지이기 때문에 컴퓨터가 텍스트를 인식할 수 없습니다. 이는 사용자가 문서의 텍스트를 편집, 검색, 포맷 변경 등을 할 수 없고, 문서로부터 필요한 정보를 추출하는 것이 불가능하다는 것을 의미합니다. 그러나 검색, 요약 및 편집 기능이 필수적인 사무실 문서에서는 이러한 제약사항이 특히 불편할 것입니다. 따라서 OCR로 이 문제를 해결하는 것입니다. 스캐너는 문서를 받아 OCR 소프트웨어로 처리하여 전자 문서로 변환합니다. OCR은 단순한 기술이 아닌, 복잡한 수학 알고리즘이 적용된 기술입니다. 하지만 Smart OCR은 매우 편리하고 사용하기 쉬운 인터페이스를 제공하기 때문에 사용자들은 사용법 숙지 등의 번거로움 없이 기술의 편리함만을 취할 수 있습니다. 수준 높은 기술인 Smar OCR은 다양한 형태의 텍스트를 인식하는 것에 초점을 맞추고 있습니다. 문서 전체에서 필요한 부분만 추출할 수 있게 하여 RPA와의 협업 등 다양한 방법으로 효율적인 업무 방식을 지원합니다. Smart OCR을 활용한 프로세스를 통해 자원을 효율적으로 업무에 할당할 수 있게 될 것 입니다. "
+            ],
             items: [
                 {
                     name: 'Tax OCR',
@@ -61,7 +64,7 @@ export const solutionsData = [
                     ],
                     // 수정 필요 
                     arch: "./architecture/tax-ocr.png",
-                    mp4: "./gif/tax-ocr-demo.mp4",
+                    mp4: "./demovideo/tax-ocr-demo.mp4",
                     download: './main.exe'
                 },
                 {
@@ -82,7 +85,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: "./architecture/Journal-Entry.png",
-                    mp4: "./gif/journal-entry.mp4",
+                    mp4: "./demovideo/journal-entry.mp4",
                 },
                 {
                     name: 'NH',
@@ -102,7 +105,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: "./architecture/NH_arch.png",
-                    mp4: "./gif/nhocr_Demo.mp4",
+                    mp4: "./demovideo/nhocr_Demo.mp4",
                 },
                 {
                     name: 'CLR',
@@ -122,7 +125,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: "./architecture/CLR_arch.png",
-                    mp4: "./gif/clr_Demo.mp4",
+                    mp4: "./demovideo/clr_Demo.mp4",
                 },
                 {
                     name: 'AdaPT',
@@ -134,7 +137,7 @@ export const solutionsData = [
                         },
                     ],
                     arch: "./architecture/AdaPT_arch.png",
-                    mp4: "./gif/AdaPT_Demo.mp4",
+                    mp4: "./demovideo/AdaPT_Demo.mp4",
                 },
             ]
         }
@@ -143,12 +146,15 @@ export const solutionsData = [
         key: "nlp",
         contents:
         {
-            title: "NLP",
+            title: "Finance NLP",
             link: '/nlp',
             thumbnail: 'https://cdn.pixabay.com/photo/2018/07/26/13/39/internet-3563638_1280.jpg',
             desc: [
                 "Finance NLP aims to analyze real customer data and propose a solution using natural language processing technology. Classifying intent of sentences, Finding key expression and Question and Answering system were used for solving problem. That makes automate work and reduces manual working time.",
                 'Finance NLP aims to analyze real customer data and propose a solution using natural language processing technology.',
+            ],
+            descKo: [
+                "Finance NLP는 자연어 처리 기술을 이용하여 고객 데이터를 분석하고 솔루션을 제안하는 것을 목표로 합니다. Finance NLP는 문장의 의도를 분류하고, 핵심 표현을 찾고, 질의 응답하는 시스템을 사용하여 문제를 해결합니다. 이를 통해 업무를 자동화하여 업무 시간을 단축할 수 있습니다. "
             ],
             items: [
                 {
@@ -169,7 +175,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: "./architecture/kccm_arch.png",
-                    mp4: "./gif/kccm_demo.mp4",
+                    mp4: "./demovideo/kccm_demo.mp4",
                 },
                 {
                     name: 'Woori Bank D-BPR',
@@ -189,7 +195,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: null,
-                    mp4: "./gif/woori_demo.mp4",
+                    mp4: "./demovideo/woori_demo.mp4",
                 },
                 {
                     name: 'Accounting Business Manual',
@@ -205,7 +211,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: "./architecture/abm.png",
-                    mp4: "./gif/nlp.mp4",
+                    mp4: "./demovideo/nlp.mp4",
                 },
                 {
                     name: 'Libor',
@@ -224,7 +230,7 @@ export const solutionsData = [
                             content: "Python Web Framework and React, Natural Language Proccessing"
                         }
                     ],
-                    mp4: "./gif/Libor.mp4",
+                    mp4: "./demovideo/Libor.mp4",
                     arch: "./architecture/libor.png",
                 }
             ]
@@ -240,6 +246,9 @@ export const solutionsData = [
                 "Automation Chatbot aims to assist auditors in performing certain procedures, where they indirectly check the credit quality of the audited entity’s customers/borrowers. In the current practice, KPMG auditors manually input customer/borrower’s business administration number into the public website hosted by Korea National Tax Service (www.hometax.go.kr) and Korea Financial Telecommunications and Clearings Institute (www.knote.or.kr) and the sites return the information about the customer/borrower – whether they closed the business (www.hometax.go.kr) and whether their checking account is suspended. Replacing this manual process, as indicated in the below diagram, BEI enables the auditors input large number of data (business registration numbers) and receive the results through chatbot app, which will make the process automated and more efficient.",
                 'Automation Chatbot aims to assist auditors in performing certain procedures, where they indirectly check the credit quality of the audited entity’s customers/borrowers. BEI enables the auditors input large number of data (business registration numbers) and receive the results through chatbot app, which will make the process automated and more efficient.',
                 'Automation Chatbot aims to assist auditors in performing certain procedures, where they indirectly check the credit quality of the audited entity’s customers/borrowers.',
+            ],
+            descKo:[
+                "Automation Chatbot은 회계 감사관들이 감사 대상 기업의 고객 또는 차입자의 신용을 간접적으로 확인하는 특정 업무 수행을 돕습니다. 현행 실무상 KPMG 회계 감사관들은 국세청 (www.hometax.go.kr)과 금융결제원(www.knote.or.kr)이 주최하는 공공홈페이지에 고객과 고객의 사업관리번호를 수동으로 입력하여 고객에 대한 정보를 얻을 수 있습니다. 고객에 대한 정보로 폐업 여부와 당좌 거래 정지 여부를 파악할 수 있습니다. 이러한 수동적인 업무 프로세스는 BEI Chatbot으로 대체될 수 있습니다. BEI Chatbot은 회계 감사관이 대량의 사업자 등록 번호 데이터를 입력하면 애플리케이션을 통해 그 결과를 받아볼 수 있도록 하여 업무를 자동화할 수 있습니다. "
             ],
             items: [
                 {
@@ -260,7 +269,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: "./architecture/closed_business.png",
-                    mp4: "./gif/closed_business.mp4",
+                    mp4: "./demovideo/closed_business.mp4",
                 },
                 {
                     name: 'Suspended Account',
@@ -280,7 +289,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: "./architecture/check_transaction.png",
-                    mp4: "./gif/check_transaction.mp4",
+                    mp4: "./demovideo/check_transaction.mp4",
                 }
             ]
         }
@@ -293,8 +302,10 @@ export const solutionsData = [
             thumbnail: 'https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg',
             desc: [
                 "KPMG Signals Repository is an active listening platform that continuously harvests a variety of data from public and private sources. Structured and unstructured data is transformed into complex expressions, creating tens of thousands of signals when used by machine learning and other AI systems, and helps our clients significantly improve the accuracy in predictions.",
-                "Signals Repository is an active listening platform that continuously harvests a variety of data from public and private sources. Structured and unstructured data is transformed into complex expressions, creating tens of thousands of signals when used by machine learning and other AI systems, and helps our clients significantly improve the accuracy in predictions.",
                 'Signals Repository is an active listening platform that continuously harvests a variety of data from public and private sources.',
+            ],
+            descKo: [
+                "KPMG Signal Repository는 공공 및 민간 자원으로부터 다양한 데이터를 지속적으로 수집하는 Active Listening 플랫폼입니다. 정형 데이터와 비정형 데이터를 변환하여 머신 러닝 및 기타 AI 시스템에서 사용할 때, 사용자가 정확한 예측을 할 수 있도록 지원합니다. "
             ],
             items: [
                 {
@@ -331,7 +342,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: "./architecture/tourism.png",
-                    mp4: "./gif/sr.mp4",
+                    mp4: "./demovideo/sr.mp4",
                 },
                 {
                     name: 'Financial Statement Analytics',
@@ -350,7 +361,7 @@ export const solutionsData = [
                 },
                 {
                     name: 'Data Catalog',
-                    link: 'data_catalog',
+                    link: '/data_catalog',
                     desc: [
                         {
                             title: "purpose",
@@ -366,7 +377,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: "./architecture/dart.png",
-                    mp4: "./gif/data_catalog_demo.mp4",
+                    mp4: "./demovideo/data_catalog_demo.mp4",
                 }
             ]
 
