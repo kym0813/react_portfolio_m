@@ -62,10 +62,9 @@ export const solutionsData = [
                             content: "Python GUI Framework(tkinter), Python Open Source(pdfminer, pdfplumber, SMTP Server(for authentication)"
                         }
                     ],
-                    // 수정 필요 
-                    arch: "./architecture/tax-ocr.png",
-                    mp4: "./demovideo/tax-ocr-demo.mp4",
-                    download: './main.exe'
+                    arch: "tax-ocr.png",
+                    mp4: "tax-ocr.mp4",
+                    download: 'tac-ocr.exe'
                 },
                 {
                     name: 'Journal Entry OCR',
@@ -84,8 +83,8 @@ export const solutionsData = [
                             content: "Python Web Framework(Flask), OCR Model(Tesseract OCR)"
                         }
                     ],
-                    arch: "./architecture/Journal-Entry.png",
-                    mp4: "./demovideo/journal-entry.mp4",
+                    arch: "journal-entry.png",
+                    mp4: "journal-entry.mp4",
                 },
                 {
                     name: 'NH',
@@ -101,11 +100,11 @@ export const solutionsData = [
                         },
                         {
                             title: "Process",
-                            image: "./architecture/NH_process.png",
+                            image: "nh_process.png",
                         }
                     ],
-                    arch: "./architecture/NH_arch.png",
-                    mp4: "./demovideo/nhocr_Demo.mp4",
+                    arch: "nh.png",
+                    mp4: "nh.mp4",
                 },
                 {
                     name: 'CLR',
@@ -121,11 +120,11 @@ export const solutionsData = [
                         },
                         {
                             title: "Process",
-                            image: "./architecture/CLR_process.png",
+                            image: "clr_process.png",
                         }
                     ],
-                    arch: "./architecture/CLR_arch.png",
-                    mp4: "./demovideo/clr_Demo.mp4",
+                    arch: "clr.png",
+                    mp4: "clr.mp4",
                 },
                 {
                     name: 'AdaPT',
@@ -136,8 +135,8 @@ export const solutionsData = [
                             content: "AdaPT (Adaptive Processing Tool) is an end to end solution that provides users with an interface to upload documents that are analysed on the Ignite platform. The analysis or workflow on the Ignite platform is completely configurable for different kinds of documents."
                         },
                     ],
-                    arch: "./architecture/AdaPT_arch.png",
-                    mp4: "./demovideo/AdaPT_Demo.mp4",
+                    arch: "adapt.png",
+                    mp4: "adapt.mp4",
                 },
             ]
         }
@@ -174,8 +173,8 @@ export const solutionsData = [
                             content: "MRC: Machine Reading Comprehension based HanBERT (Variants of BERT powered-by TwoBlockAI), NER: Name Entity Recognition based KoBERT (Variants of BERT powered-by SKTelecom), Clova OCR: The most powerful and accurate OCR for Korean documents, NLP: Traditional Natural Language Processing was used (Statistical NLP, RegEx and so on)"
                         }
                     ],
-                    arch: "./architecture/kccm_arch.png",
-                    mp4: "./demovideo/kccm_demo.mp4",
+                    arch: "kccm.png",
+                    mp4: "kccm.mp4",
                 },
                 {
                     name: 'Woori Bank D-BPR',
@@ -195,7 +194,7 @@ export const solutionsData = [
                         }
                     ],
                     arch: null,
-                    mp4: "./demovideo/woori_demo.mp4",
+                    mp4: "woori.mp4",
                 },
                 {
                     name: 'Accounting Business Manual',
@@ -210,8 +209,8 @@ export const solutionsData = [
                             content: "NLP Task, the latest Bert engine"
                         }
                     ],
-                    arch: "./architecture/abm.png",
-                    mp4: "./demovideo/nlp.mp4",
+                    arch: "abm.png",
+                    mp4: "abm.mp4",
                 },
                 {
                     name: 'Libor',
@@ -226,12 +225,12 @@ export const solutionsData = [
                             content: "Now that the Libor interest rate disclosure is expected to stop, we can prepare for changes by detecting the Libor interest rate-related clause in existing contracts."
                         },
                         {
-                            title: "used technology",
+                            title: "Used Technology",
                             content: "Python Web Framework and React, Natural Language Proccessing"
                         }
                     ],
-                    mp4: "./demovideo/Libor.mp4",
-                    arch: "./architecture/libor.png",
+                    arch: "libor.png",
+                    mp4: "libor.mp4",
                 }
             ]
         }
@@ -268,8 +267,8 @@ export const solutionsData = [
                             content: "Microsoft Botframework(Azure Bot Channel Registration, Azure Language Understanding) MS Botbuilder(Python, Web Framework - Aiohttp)"
                         }
                     ],
-                    arch: "./architecture/closed_business.png",
-                    mp4: "./demovideo/closed_business.mp4",
+                    arch: "closed_business.png",
+                    mp4: "closed_business.mp4",
                 },
                 {
                     name: 'Suspended Account',
@@ -288,8 +287,8 @@ export const solutionsData = [
                             content: "Microsoft Botframework(Azure Bot Channel Registration, Azure Language Understanding), MS Botbuilder(Python, Web Framework - Aiohttp)"
                         }
                     ],
-                    arch: "./architecture/check_transaction.png",
-                    mp4: "./demovideo/check_transaction.mp4",
+                    arch: "check_transaction.png",
+                    mp4: "check_transaction.mp4",
                 }
             ]
         }
@@ -341,8 +340,8 @@ export const solutionsData = [
                             content: 'In the global context, understanding the increase and decrease status of COVID 19 confirmed cases will be critical to the business. With its rich global network, KPMG first monitors the number of global coroners at near real-time intervals to collect signals. Data visualization is also important. Data visualization helps users intuitively understand the current situation. Furthermore, we are proactively monitoring domestic impact by identifying local covid19 confirmed cases and deaths.'
                         }
                     ],
-                    arch: "./architecture/tourism.png",
-                    mp4: "./demovideo/sr.mp4",
+                    arch: "tourism.png",
+                    mp4: "tourism.mp4",
                 },
                 {
                     name: 'Financial Statement Analytics',
@@ -357,7 +356,7 @@ export const solutionsData = [
                             content: "KPMG Lighthouse collects thousands of annual reports, quarterly reports, and semi-annual reports, etc published in DART and finds signals. These signals often provide financial, business, and risk management insights."
                         },
                     ],
-                    arch: "./architecture/dart.png",
+                    arch: "dart.png",
                 },
                 {
                     name: 'Data Catalog',
@@ -376,8 +375,8 @@ export const solutionsData = [
                             content: "Data Engineering, R: Shiny Dashboard"
                         }
                     ],
-                    arch: "./architecture/dart.png",
-                    mp4: "./demovideo/data_catalog_demo.mp4",
+                    arch: "dart.png",
+                    mp4: "data_catalog.mp4",
                 }
             ]
 

@@ -29,8 +29,6 @@ const App = () => {
             key={i} path={`/solutions${s.contents.link}`} 
             render={() => <ItemsList contents={s.contents} />}
           />)}
-
-        <Footer display={menu} />
     </div>
   );
 }

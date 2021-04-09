@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Intro from './component/Intro';
 import Contents from './component/Contents';
 import Locations from './component/Locations';
-
+import Footer from '../../static/component/Footer';
 const StyledBox = styled.div`
     .container{ 
         scroll-behavior: smooth;
@@ -23,6 +23,7 @@ const GlobalInsight = () => {
                 <div><Intro /></div>
                 <div><Contents /></div>
                 <div><Locations /></div>
+                <Footer />
             </div>
         </StyledBox>
     );

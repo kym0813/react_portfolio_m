@@ -4,6 +4,8 @@ import Intro from './component/Intro';
 import Vision from './component/Vision';
 import Strategies from './component/Strategies';
 import Solutions from './component/Solutions';
+import Footer from '../../static/component/Footer';
+
 
 const StyledBox = styled.div`
     .container{ 
@@ -25,6 +27,7 @@ const Landing = () => {
                 <div><Vision /></div>
                 <div><Strategies /></div>
                 <div><Solutions /></div>
+                <Footer />
             </div>
         </StyledBox>
     );

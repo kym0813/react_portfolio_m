@@ -8,7 +8,7 @@ const StyledBox = styled.div`
     background-color: #e2e5e9;
     color: ${props => props.color || 'white'};
     background-image: url(${props => props.bg});
-    background-size: ${props => `${props.size}%` ||  '100%'};
+    background-size: ${props => `${props.size}%` || 'cover' };
     background-position-x: ${props => props.x || '50%'};
     background-position-y: ${props => props.y || '50%'};
     animation: animatedBackground ease-in 10s infinite;

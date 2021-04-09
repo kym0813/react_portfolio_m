@@ -47,11 +47,9 @@ const StyledBox = styled.div`
         color: #444;
         width: 100%;
         background: rgba(255,255,255,0.8);
-        overflow-y: scroll;
-        overflow-x: hidden;
-        height: 83vh;
+        overflow: auto;
+        height: 82.4vh;
         border-top-right-radius: 40px;
-        overflow-x: scroll;
         scroll-behavior: smooth;
     }
     .contentsBox::-webkit-scrollbar{ width: 2px; background: transparent;}

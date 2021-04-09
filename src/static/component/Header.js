@@ -29,7 +29,7 @@ const StyledBox = styled.div`
 
 `;
 
-const Header = ({ setMenu, history }) => {
+const Header = ({ setMenu }) => {
     const [clicked, setClicked] = useState(false);
     const [link, setLink] = useState('/menu');
 
